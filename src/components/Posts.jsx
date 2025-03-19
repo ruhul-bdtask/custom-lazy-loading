@@ -5,7 +5,7 @@ const Posts = () => {
   const posts = resource.read();
 
   return (
-    <div className="p-5">
+    <div className="p-5 bg-gray-600">
       <div className="text-lg font-semibold">Total Posts: {posts.length}</div>
       {posts.map((post) => (
         <div key={post.id}>{post.title}</div>
