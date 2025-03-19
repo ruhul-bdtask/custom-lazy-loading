@@ -12,7 +12,6 @@ const wrapPromise = (promise) => {
       response = err;
     }
   );
-  console.log(suspender);
   const read = () => {
     switch (status) {
       case "pending":
